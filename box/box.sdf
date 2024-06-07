@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="box">
+    <static>false</static>
+    <link name="link">
+    <inertial>
+      <pose>0.200 0.150 0.005 0 0 0</pose>
+      <mass>1.55765 </mass>
+	  <inertia>
+	    <ixx>0.02574253499</ixx>
+	    <ixy>0.0</ixy>
+	    <ixz>0.0</ixz>
+	    <iyy>0.04195082867</iyy>
+	    <iyz>0.0</iyz>
+	    <izz>0.05624236962</izz>
+	  </inertia>
+    </inertial>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+         <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/catkin_ws/src/models/box/meshes/box.STL</uri>  
+          </mesh>
+        </geometry>  
+      </collision>
+      <visual name="visual">    
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/catkin_ws/src/models/box/meshes/box.STL</uri>  
+          </mesh>
+        </geometry>        
+      </visual>
+    </link>
+  </model>
+</sdf>
+
